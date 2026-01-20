@@ -1,62 +1,50 @@
-# USA Car Sales Analysis (2018–2024)
+# 📊 Car Sales Dashboard (Power BI)
 
-## 📊 Project Overview
+## 📌 Overview
 
-This repository contains a complete **end-to-end data analysis project** focused on car sales in the United States using the *USA Car Sales Dataset (2018–2024)* from Kaggle. The goal of this project is to extract actionable insights from real transactional sales data, explore trends over time, and highlight key patterns in pricing, customer behavior, and regional performance.
+This project presents an interactive Car Sales Performance Dashboard built in Power BI, designed to analyze sales trends, pricing behavior, and dealer performance across regions, vehicle attributes, and time. 
+The dashboard enables stakeholders to quickly evaluate year-to-date (YTD) and month-to-date (MTD) performance, identify high-performing segments, and drill into transaction-level details for deeper analysis.
 
-🔗 **Dataset Source:** *[USA Car Sales Dataset (2018–2024)](https://www.kaggle.com/datasets/anjaliprajapati307/usa-car-sales-dataset-2018-2024?resource=download)* — available on Kaggle.
+## 🧠 Business Questions Addressed
+- How are **total sales, average price, and units sold** trending YTD and MTD?
+- Which **companies and dealer regions** contribute most to revenue?
+- How do **vehicle attributes** (body style, color, transmission, engine type) affect sales performance?
+- Are there **seasonal or weekly sales patterns**?
+- Which dealers or transactions require deeper investigation?
 
-## 🔍 Project Goals
+## 📈 Key Metrics Tracked
+- **YTD Total Sales**
+- **YTD Cars Sold**
+- **YTD Average Price**
+- **MTD vs YTD variance (%)**
+- **% of Grand Total Sales by Company**
+- Weekly sales trends
+- Sales by body style, color, and region
 
-- **Clean & preprocess** raw car sales data
-- **Explore patterns** in sales volume, pricing, and seasonality
-- **Analyze sales by brand, model, and year**
-- **Identify customer and regional trends**
-- **Visualize insights** through charts and dashboards
-- (Future) **Build forecasting models** for future sales trends
+## 🎥 Dashboard Walkthrough
 
-## 📁 What’s Inside This Repo
-
-| Folder / File | Description |
-|---------------|-------------|
-| `data/` | Cleaned datasets, ready for analysis |
-| `notebooks/` | Jupyter notebooks with EDA, visualizations, and modeling |
-| `scripts/` | Python scripts for preprocessing and analysis |
-| `reports/` | Generated charts, tables, and insights |
-| `README.md` | Project introduction and instructions |
-
-## 🧠 Dataset Structure
-
-The car sales dataset includes transactional records spanning 2018–2024, such as:
-- Sale Date
-- Vehicle Make & Model
-- Sale Price
-- Customer Details
-- Regional / State information
-- Additional sales attributes  *(discount, payment method, commission, sale month+quarter, etc)*
+## 🔍 Actionable Insights from the Analysis
+- **Revenue concentration**: A small subset of companies contributes a disproportionately high share of YTD sales, indicating opportunities for targeted partnerships or risk diversification.
+- **Pricing stability**: Despite fluctuations in monthly volume, **average vehicle prices remain relatively stable**, suggesting consistent pricing strategies across dealers.
+- **Product mix impact**: Certain body styles (e.g., SUVs and Sedans) dominate total revenue, highlighting customer preference trends that can inform inventory planning.
+- **Regional performance gaps**: Dealer regions show uneven sales contribution, signaling where marketing spend or dealer support could be optimized.
+- **Sales volatility**: Weekly trend analysis reveals revenue spikes and dips, useful for demand forecasting and staffing or promotional planning.
 
 ## 🛠 Tools & Technologies
+- **Power BI Desktop**
+- **DAX**
+  - `TOTALYTD`, `MTD`, `% of Grand Total`
+  - Custom measures for KPI comparison
+- **Power Query** for data shaping
+- Conditional formatting (data bars)
+- Custom navigation buttons
+- Interactive slicers & filters
+- Dark-theme dashboard design for readability
 
-| Tool | Use |
-|------|-----|
-| Python (Pandas, NumPy) | Data cleaning & analysis |
-| Matplotlib / Seaborn / Plotly | Visualization |
-| Jupyter Notebook | Exploratory analysis |
-| (Optional) SQL / PostgreSQL | Data warehousing |
-| (Optional) Tableau / Power BI | Dashboards & reporting |
+## 📊 Dataset
+- Publicly available car sales *[dataset](https://drive.google.com/drive/folders/1h6RQTGkoMOqovVUh9qf_nX5bI1_Meg8w)*
+- Data includes transactional sales records with vehicle, dealer, and customer attributes
 
-## 📈 Sample Insights (Examples)
-
-- Trends in total sales over time
-- Price distribution by car make and model
-- Seasonal variations in sales performance
-- Region-wise performance and comparison
-- Customer demographics and preferences
-
-> These example analyses form the foundation of business-relevant insights that could help dealerships better forecast demand, optimize inventory, or tailor pricing strategies.
-
-## 🧩 How to Use This Repo
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/jimmywin656/us-car-sales-analysis.git
+## 📬 Feedback & Next Steps
+This project was created as part of a data analytics portfolio.  
+Suggestions, feedback, or discussion are always welcome.
