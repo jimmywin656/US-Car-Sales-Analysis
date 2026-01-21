@@ -1,7 +1,11 @@
 # 📊 Car Sales Dashboard (Power BI)
+<p align="center">
+  <img src="screenshots/dashboard-overview.png" width="45%">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshots/dashboard-details.png" width="45%">
+</p>
 
 ## 📌 Overview
-
 This project presents an interactive Car Sales Performance Dashboard built in Power BI, designed to analyze sales trends, pricing behavior, and dealer performance across regions, vehicle attributes, and time. 
 The dashboard enables stakeholders to quickly evaluate year-to-date (YTD) and month-to-date (MTD) performance, identify high-performing segments, and drill into transaction-level details for deeper analysis.
 
